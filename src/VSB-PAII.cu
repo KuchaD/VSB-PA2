@@ -1,5 +1,15 @@
 /*
  ============================================================================
+ Name        : VSB-PAII.cu
+ Author      : Dave
+ Version     :
+ Copyright   : Your copyright notice
+ Description : CUDA compute reciprocals
+ ============================================================================
+ */
+
+/*
+ ============================================================================
  Name        : cuda1.cu
  Author      : david
  Version     :
@@ -24,18 +34,13 @@ __global__ void VectorAdd(int *A,int *B,int *C,int M)
 	}
 }
 __global__
-void VectorAddMN(int **A,int **B,int *C,int M,int N)
+void VectorAddMN(int *A,int *B,int *C,int M,int N)
 {
-	int i= threadIdx.x + blockIdx.x * blockDim.x;
-	int j= threadIdx.x + blockIdx.y * blockDim.y;
-
-	if(i < M)
+	const int i = blockIdx.x * blockDim.x + threadIdx.x;
+	const int j = blockIdx.y * blockDim.y + threadIdx.y;
+	if (i < M && j < N)
 	{
-		if(j < N){
-
-			C[i] += A[i][j] + B[i][j];
-
-		}
+		C[i * M + j] = A[i * M + j] + B[i * M + j];
 	}
 }
 void CV1_1()
@@ -99,43 +104,49 @@ void CV1_2()
     const unsigned int N = 10;
 
 	//Host allocate
-	int **A_Host = (int**)malloc(M*N*sizeof(int));
-	int **B_Host = (int**)malloc(M*N*sizeof(int));
-	int *C_Host = (int*)malloc(M*sizeof(int));
+	int *A_Host = (int*)malloc(M*N*sizeof(int));
+	int *B_Host = (int*)malloc(M*N*sizeof(int));
+	int *C_Host = (int*)malloc(M*N*sizeof(int));
 
 	for(int i=0; i < M;i++)
 	{
 		for(int j=0; j < N;j++)
 			{
-				A_Host[i][j] = i * j;
-				B_Host[i][j] = i * j;
+			A_Host[i * M + j] = i  * j ;
+			B_Host[i * M + j] = i  * j ;
 
 			}
-		C_Host[i] = 0;
 	}
 
-	int **A_Device;
+	int *A_Device;
 	cudaMalloc(&A_Device,M*N*sizeof(int));
 
-	int **B_Device;
+	int *B_Device;
 	cudaMalloc(&B_Device,M*N*sizeof(int));
 	int *C_Device;
-	cudaMalloc(&C_Device,M*sizeof(int) );
+	cudaMalloc(&C_Device,M*N*sizeof(int) );
 
 	cudaMemcpy(A_Device, A_Host,M*N*sizeof(int), cudaMemcpyHostToDevice);
 	cudaMemcpy(B_Device, B_Host, M*N*sizeof(int), cudaMemcpyHostToDevice);
 	cudaMemcpy(C_Device, C_Host, M*sizeof(int), cudaMemcpyHostToDevice);
 
-	int Thread = M*N;
+	dim3 dimBlock(M, N);
+	dim3 dimGrid(1, 1);
 
-	VectorAddMN<<<2,Thread>>>(A_Device,B_Device,C_Device,M,N);
+	VectorAddMN<<<dimGrid, dimBlock>>>(A_Device,B_Device,C_Device,M,N);
 
-	cudaMemcpy(C_Host, C_Device, M*sizeof(int), cudaMemcpyDeviceToHost);
-	for (int i = 0; i < 10; i++)
-	{
-	 printf("\n N:[%d] - %d",i, C_Host[i]);
-	}
+	cudaMemcpy(C_Host, C_Device, M*N*sizeof(int), cudaMemcpyDeviceToHost);
 
+
+	for (int i = 0; i < M; i++)
+		{
+			std::cout << i << "| " ;
+			for (int j = 0; j < N; j++)
+			{
+				std::cout << C_Host[i * M + j] << "   ";
+			}
+			std::cout << std::endl;
+		}
 
 	free(A_Host);
 	free(B_Host);
