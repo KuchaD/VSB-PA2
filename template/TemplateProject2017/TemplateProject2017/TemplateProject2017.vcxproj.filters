@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="Runner_1.cu">
+      <Filter>EX1</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Runner_2.cu">
+      <Filter>EX2</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Runner_3.cu">
+      <Filter>EX3</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Runner.cu">
+      <Filter>Ex4 const</Filter>
+    </CudaCompile>
+    <CudaCompile Include="run6\Runner.cu">
+      <Filter>Ex4 texture</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="EX1">
+      <UniqueIdentifier>{56b49135-e5f5-4e97-9673-b29f050bfd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EX2">
+      <UniqueIdentifier>{0f6e7423-2f19-420b-9f76-8596c054b7d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EX3">
+      <UniqueIdentifier>{9bdb384f-1553-4b14-bd0f-4ea4c7f7db78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ex4 const">
+      <UniqueIdentifier>{5d47ac51-012b-41cd-809a-a485dff083f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ex4 texture">
+      <UniqueIdentifier>{566c0583-3d2b-41d1-9d39-64dc7eb06525}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="run6\terrain10x10.tif">
+      <Filter>Ex4 texture</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="run6\imageKernels.cuh">
+      <Filter>Ex4 texture</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

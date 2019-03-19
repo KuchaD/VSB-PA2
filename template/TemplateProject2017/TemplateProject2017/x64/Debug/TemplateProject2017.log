@@ -1,0 +1,54 @@
+﻿  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile  -gencode=arch=compute_35,code=\"sm_35,compute_35\"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\run6\Runner.cu" -clean 
+  Runner.cu
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile  -gencode=arch=compute_35,code=\"sm_35,compute_35\"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner.cu" -clean 
+  Runner.cu
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile  -gencode=arch=compute_35,code=\"sm_35,compute_35\"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner_3.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner_3.cu" -clean 
+  Runner_3.cu
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile  -gencode=arch=compute_35,code=\"sm_35,compute_35\"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner_1.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner_1.cu" -clean 
+  Runner_1.cu
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile  -gencode=arch=compute_35,code=\"sm_35,compute_35\"  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner_2.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner_2.cu" -clean 
+  Runner_2.cu
+  Compiling CUDA source file run6\Runner.cu...
+  Compiling CUDA source file Runner.cu...
+  Compiling CUDA source file Runner_3.cu...
+  Compiling CUDA source file Runner_1.cu...
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -gencode=arch=compute_35,code=\"sm_35,compute_35\" -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\run6\Runner.cu" 
+  
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -gencode=arch=compute_35,code=\"sm_35,compute_35\" -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner_1.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner_1.cu" 
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -gencode=arch=compute_35,code=\"sm_35,compute_35\" -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner.cu" 
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -gencode=arch=compute_35,code=\"sm_35,compute_35\" -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner_3.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner_3.cu" 
+  Runner_1.cu
+  Runner.cu
+  Runner_3.cu
+  Compiling CUDA source file Runner_2.cu...
+  
+  C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -gencode=arch=compute_35,code=\"sm_35,compute_35\" -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\Runner_2.cu.obj "C:\GIT\VSB-PA2\template\TemplateProject2017\TemplateProject2017\Runner_2.cu" 
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(139): warning : variable "row" was declared but never referenced
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(140): warning : variable "col" was declared but never referenced
+  Runner_2.cu
+  Runner.cu
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(61): warning C4267: 'argument': conversion from 'size_t' to 'const unsigned int', possible loss of data
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(65): warning C4267: 'argument': conversion from 'size_t' to 'const unsigned int', possible loss of data
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(69): warning C4267: 'argument': conversion from 'size_t' to 'const unsigned int', possible loss of data
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(73): warning C4267: 'argument': conversion from 'size_t' to 'const unsigned int', possible loss of data
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(79): warning C4267: 'argument': conversion from 'size_t' to 'const unsigned int', possible loss of data
+C:/GIT/VSB-PA2/template/TemplateProject2017/TemplateProject2017/run6/Runner.cu(109): warning C4060: switch statement contains no 'case' or 'default' labels
+  TemplateProject2017.vcxproj -> C:\GIT\VSB-PA2\template\TemplateProject2017\x64\Debug\TemplateProject2017.exe
+  copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\cudart*.dll" "C:\GIT\VSB-PA2\template\TemplateProject2017\x64\Debug\"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\cudart32_100.dll
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\cudart64_100.dll
+          2 file(s) copied.
+  ..\..\common\FreeGlut\bin\x64\freeglut.dll
+          1 file(s) copied.
+  ..\..\common\Glew\bin\x64\glew64.dll
+          1 file(s) copied.
+  ..\..\common\FreeImage\bin\x64\FreeImage64.dll
+          1 file(s) copied.
